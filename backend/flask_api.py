@@ -18,7 +18,7 @@ def home():
     return jsonify({"message": "Flask API is running!"})
 
 def send_whatsapp_message(message, phone_number):
-    url = f"http://api.textmebot.com/send.php?recipient={phone_number}&apikey=oXswcn3vjeoF&text={message}"  
+    url = f"http://api.textmebot.com/send.php?recipient={phone_number}&apikey={TEXTMEBOT_TOKEN}&text={message}"  
     try:
         response = requests.post(url)
         response_json = response.json()

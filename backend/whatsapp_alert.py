@@ -15,7 +15,7 @@ WHATSAPP_NUMBER = os.getenv("RECEIVER_PHONE")  # Recipient's WhatsApp number
 
 # Function to send WhatsApp message
 def send_whatsapp_alert(message):
-    url = "http://api.textmebot.com/send.php?recipient=+917747010127&apikey=oXswcn3vjeoF&text=This%20is%20a%20test"
+    url = "http://api.textmebot.com/send.php?recipient={WHATSAPP_NUMBER}&apikey={ULTRAMSG_TOKEN}&text=This%20is%20a%20test"
     
 
     response = requests.post(url)
