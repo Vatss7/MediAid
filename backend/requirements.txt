@@ -1,0 +1,17 @@
+streamlit
+google-generativeai
+python-dotenv
+langchain
+PyPDF2
+Pillow
+pytesseract
+gtts
+deep-translator
+schedule
+chromadb
+faiss-cpu
+langchain-community
+google-auth
+google-auth-oauthlib
+twilio
+requests
